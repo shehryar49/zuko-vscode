@@ -7,6 +7,7 @@ a
 multiline
 comment
 -#
+#-multiline but on a single line-#
 
 # single line comment
 var id123_ = 230

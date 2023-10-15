@@ -1,0 +1,112 @@
+{
+	"name": "Plutonium",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include":"#blockcomment"
+		},
+		{
+          "include": "#comment"
+		},
+		{
+			"include": "#byte"
+		},
+		{
+			"include": "#boolean"
+		},
+		{
+			"include":"#nil"
+		},
+		{
+			"include":"#special"
+		},
+		{
+			"include":"#modifier"
+		},
+		{
+          "include": "#identifier"
+		},
+		{
+			"include":"#numeric"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.plutonium",
+				"match": "\\b(if|while|for|return|dowhile|foreach|else|throw|break|continue|yield)\\b"
+			},
+			{
+				"name": "keyword.other.plutonium",
+				"match": "\\b(import|as|var|function|class|extends|namespace|try|catch)\\b"
+			},
+			{
+				"name": "keyword.operator.plutonium",
+				"match": "\\b(and|or|is)\\b"
+			}
+		  ]
+		},
+		"numeric":
+		{
+			"name":"constant.numeric.plutonium",
+			"match":"\\d+(.\\d+(e\\d+)?)?"
+		},
+		"comment":{
+			"name":"comment.line.plutonium",
+			"match": "#.*"
+		},
+		"special":
+		{
+			"name":"variable.language.plutonium",
+			"match":"\\b(self|Error|TypeError|ValueError|ArgumentError|IndexError|NameError|MathError|FileIOError|FileOpenError|FileSeekError|ImportError|ThrowError|AccessError|MaxRecursionError|OverflowError|KeyError)\\b"
+		},
+		"modifier":
+		{
+			"name":"storage.modifier",
+            "match":"\\b(private|public)\\b"
+		},
+		"strings": {
+			"name": "string.quoted.double.plutonium",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.plutonium",
+					"match": "\\\\."
+				}
+			]
+		},
+        "boolean":{
+			"name": "constant.language.plutonium",
+			"match": "\\b(true|false)\\b"
+		},
+		"nil":
+		{
+			"name":"constant.language.plutonium",
+			"match": "\\b(nil)\\b"
+		},
+		"byte":
+		{
+          "name":"constant.numeric.plutonium",
+		  "match":"0x[0-9a-fA-F]{2}"
+		},
+		"identifier":
+		{
+			"name": "source.plutonium",
+			"match": "[a-zA-Z_]+[A-Za-z0-9_]+"
+		},
+		"blockcomment":
+		{
+			"name": "comment.block.plutonium",
+			"begin": "#-",
+			"end": "-#"
+
+		}
+	},
+	"scopeName": "source.plt"
+}
