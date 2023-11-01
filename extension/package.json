@@ -31,15 +31,5 @@
 				"path": "./syntaxes/plutonium.tmLanguage.json"
 			}
 		]
-	},
-	"__metadata": {
-		"id": "340daf07-08d5-4d31-8299-c8c7d82b6938",
-		"publisherId": "16d730a5-d9e9-46c0-a983-8da20499c3dd",
-		"publisherDisplayName": "Shahryar Ahmad",
-		"targetPlatform": "undefined",
-		"updated": false,
-		"isPreReleaseVersion": false,
-		"installedTimestamp": 1695455493198,
-		"preRelease": false
 	}
 }
