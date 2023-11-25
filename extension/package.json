@@ -1,7 +1,7 @@
 {
-	"name": "plutonium",
-	"displayName": "Plutonium Programming Language",
-	"description": "Support for Plutonium language",
+	"name": "zuko",
+	"displayName": "Zuko Programming Language",
+	"description": "Support for Zuko language",
 	"publisher": "ShahryarAhmad",
 	"version": "0.0.1",
 	"engines": {
@@ -13,22 +13,22 @@
 	"contributes": {
 		"languages": [
 			{
-				"id": "plutonium",
+				"id": "zuko",
 				"aliases": [
-					"Plutonium",
-					"plutonium"
+					"Zuko",
+					"zuko"
 				],
 				"extensions": [
-					".plt"
+					".zk"
 				],
 				"configuration": "./language-configuration.json"
 			}
 		],
 		"grammars": [
 			{
-				"language": "plutonium",
-				"scopeName": "source.plt",
-				"path": "./syntaxes/plutonium.tmLanguage.json"
+				"language": "zuko",
+				"scopeName": "source.zk",
+				"path": "./syntaxes/zuko.tmLanguage.json"
 			}
 		]
 	}

@@ -1,5 +1,5 @@
 {
-	"name": "Plutonium",
+	"name": "Zuko",
 	"patterns": [
 		{
 			"include": "#keywords"
@@ -38,31 +38,31 @@
 	"repository": {
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.plutonium",
+				"name": "keyword.control.zuko",
 				"match": "\\b(if|while|for|return|dowhile|foreach|else|throw|break|continue|yield)\\b"
 			},
 			{
-				"name": "keyword.other.plutonium",
+				"name": "keyword.other.zuko",
 				"match": "\\b(import|as|var|function|class|extends|namespace|try|catch)\\b"
 			},
 			{
-				"name": "keyword.operator.plutonium",
+				"name": "keyword.operator.zuko",
 				"match": "\\b(and|or|is)\\b"
 			}
 		  ]
 		},
 		"numeric":
 		{
-			"name":"constant.numeric.plutonium",
+			"name":"constant.numeric.zuko",
 			"match":"\\d+(.\\d+(e\\d+)?)?"
 		},
 		"comment":{
-			"name":"comment.line.plutonium",
+			"name":"comment.line.zuko",
 			"match": "#.*"
 		},
 		"special":
 		{
-			"name":"variable.language.plutonium",
+			"name":"variable.language.zuko",
 			"match":"\\b(self|Error|TypeError|ValueError|ArgumentError|IndexError|NameError|MathError|FileIOError|FileOpenError|FileSeekError|ImportError|ThrowError|AccessError|MaxRecursionError|OverflowError|KeyError)\\b"
 		},
 		"modifier":
@@ -71,42 +71,42 @@
             "match":"\\b(private|public)\\b"
 		},
 		"strings": {
-			"name": "string.quoted.double.plutonium",
+			"name": "string.quoted.double.zuko",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.plutonium",
+					"name": "constant.character.escape.zuko",
 					"match": "\\\\."
 				}
 			]
 		},
         "boolean":{
-			"name": "constant.language.plutonium",
+			"name": "constant.language.zuko",
 			"match": "\\b(true|false)\\b"
 		},
 		"nil":
 		{
-			"name":"constant.language.plutonium",
+			"name":"constant.language.zuko",
 			"match": "\\b(nil)\\b"
 		},
 		"byte":
 		{
-          "name":"constant.numeric.plutonium",
+          "name":"constant.numeric.zuko",
 		  "match":"0x[0-9a-fA-F]{2}"
 		},
 		"identifier":
 		{
-			"name": "source.plutonium",
+			"name": "source.zuko",
 			"match": "[a-zA-Z_]+[A-Za-z0-9_]+"
 		},
 		"blockcomment":
 		{
-			"name": "comment.block.plutonium",
+			"name": "comment.block.zuko",
 			"begin": "#-",
 			"end": "-#"
 
 		}
 	},
-	"scopeName": "source.plt"
+	"scopeName": "source.zk"
 }

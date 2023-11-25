@@ -1,5 +1,5 @@
 ## INTRO
-An extension for Plutonium programming language. It currently provides syntax highlighting
+An extension for Zuko programming language. It currently provides syntax highlighting
 support only. 
 
 ## Features
