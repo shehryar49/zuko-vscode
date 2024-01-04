@@ -19,7 +19,8 @@
 					"zuko"
 				],
 				"extensions": [
-					".zk"
+					".zk",
+					".zuko"
 				],
 				"configuration": "./language-configuration.json"
 			}

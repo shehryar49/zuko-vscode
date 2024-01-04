@@ -39,7 +39,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.zuko",
-				"match": "\\b(if|while|for|return|dowhile|foreach|else|throw|break|continue|yield)\\b"
+				"match": "\\b(if|while|for|return|dowhile|foreach|else|throw|break|continue|yield|to|dto)\\b"
 			},
 			{
 				"name": "keyword.other.zuko",
