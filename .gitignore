@@ -1,3 +1,4 @@
+extension/src/out/extension.js
 extension/node_modules
 extension/*.vsix
 extension/package-lock.json

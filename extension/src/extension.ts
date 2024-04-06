@@ -16,10 +16,10 @@ export function activate(context: ExtensionContext) {
     let serverExe;
     if(process.platform == "win32")
     {
-        serverExe = "C:\\zuko\\lsp\\zuko-lsp.exe";
+        serverExe = "C:\\zuko\\lsp\\firebender.exe";
     }
     else
-      serverExe = '/opt/zuko/lsp/zuko-lsp';
+      serverExe = '/opt/zuko/lsp/firebender';
 
     const fs = require("fs"); // Or `import fs from "fs";` with ESM
     if (!fs.existsSync(serverExe)) 
